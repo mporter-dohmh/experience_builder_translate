@@ -1,4 +1,19 @@
 <script type="text/javascript">
-    console.log("*** TEST TEST TEST ***");
+    function changeText(newText) {
+        // Find the span element inside the div
+        const spanElement = document.querySelector('div[data-testid="rich-displayer"] span');
+        
+        // Check if the span element exists
+        if (spanElement) {
+            // Change the text inside the span element
+            spanElement.innerText = newText;
+        } else {
+            console.error('Element not found');
+        }
+    }
+    
+    // Example usage:
+    changeText('New Title');    
+    console.log("*** Title text changed ***");
 </script>
 
