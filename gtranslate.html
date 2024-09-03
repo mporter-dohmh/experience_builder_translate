@@ -1,7 +1,7 @@
 <script type="text/javascript">
     function changeText(newText) {
         // Find the span element inside the div
-        const spanElement = document.querySelector('div[data-testid="rich-displayer"] span');
+        const spanElement = document.getElementsByClassName("rich-displayer")[0].childNodes[0].childNodes[0];
         
         // Check if the span element exists
         if (spanElement) {
